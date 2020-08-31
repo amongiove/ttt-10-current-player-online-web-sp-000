@@ -3,11 +3,11 @@ board = [" "," "," "," "," "," "," "," "," "]
 def turn_count(board)
   counter = 0
   board.each do |character|
-    if character != " " || "" || nil
+    if character == "X" || character == "O"
       counter += 1
     end
-  return counter
   end
+  return counter
 end
 
 def current_player
